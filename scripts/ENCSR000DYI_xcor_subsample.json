@@ -1,0 +1,20 @@
+{
+    "chipseq.pipeline_type" : "tf",
+    "chipseq.genome_tsv" : "/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/hg38_chr19_chrM_local.tsv",
+    "chipseq.fastqs" : [
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/se/fastqs/rep1/rep1.subsampled.25.fastq.gz"]],
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/se/fastqs/rep2/rep2.subsampled.20.fastq.gz"]]
+    ],
+    "chipseq.ctl_fastqs" : [
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/se/fastqs/ctl1/ctl1.subsampled.25.fastq.gz"]],
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/se/fastqs/ctl2/ctl2.subsampled.25.fastq.gz"]]
+    ],
+
+    "chipseq.paired_end" : false,
+    "chipseq.choose_ctl.always_use_pooled_ctl" : true,
+    "chipseq.align_only" : true,
+    "chipseq.xcor.subsample" : 17000,
+
+    "chipseq.qc_report.name" : "ENCSR000DYI (subsampled 1/25 reads)",
+    "chipseq.qc_report.desc" : "CEBPB ChIP-seq on human A549 produced by the Snyder lab"
+}

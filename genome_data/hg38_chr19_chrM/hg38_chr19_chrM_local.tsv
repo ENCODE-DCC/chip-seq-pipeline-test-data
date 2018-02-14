@@ -1,0 +1,6 @@
+blacklist	/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/hg38.blacklist.bed.gz
+chrsz	/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/hg38_chr19_chrM.chrom.sizes
+gensz	hs
+bowtie2_idx_tar	/dev/null
+bwa_idx_tar	/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/bwa_index/GRCh38_no_alt_analysis_set_GCA_000001405.15.chr19_chrM.fasta.tar
+ref_fa	/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/GRCh38_no_alt_analysis_set_GCA_000001405.15.chr19_chrM.fasta.gz

@@ -1,0 +1,25 @@
+{
+    "chipseq.pipeline_type" : "tf",
+    "chipseq.genome_tsv" : "/users/leepc12/code/chip-seq-pipeline-test-data/genome_data/hg38_chr19_chrM/hg38_chr19_chrM_local.tsv",
+    "chipseq.fastqs" : [
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/rep1/pair1/rep1-R1.subsampled.67.fastq.gz",
+          "/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/rep1/pair2/rep1-R2.subsampled.67.fastq.gz"]],
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/rep2/pair1/rep2-R1.subsampled.67.fastq.gz",
+          "/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/rep2/pair2/rep2-R2.subsampled.67.fastq.gz"]]
+    ],
+    "chipseq.ctl_fastqs" : [
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/ctl1/pair1/ctl1-R1.subsampled.80.fastq.gz",
+          "/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/ctl1/pair2/ctl1-R2.subsampled.80.fastq.gz"]],
+        [["/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/ctl2/pair1/ctl2-R1.subsampled.80.fastq.gz",
+          "/users/leepc12/code/chip-seq-pipeline-test-data/input/pe/fastqs/ctl2/pair2/ctl2-R2.subsampled.80.fastq.gz"]]
+    ],
+
+
+    "chipseq.paired_end" : true,
+    "chipseq.align_only" : true,
+    "chipseq.bam2ta.subsample" : 17000,
+
+    "chipseq.choose_ctl.always_use_pooled_ctl" : true,
+    "chipseq.qc_report.name" : "ENCSR936XTK (subsampled 1/66.67 reads)",
+    "chipseq.qc_report.desc" : "ZNF143 ChIP-seq on human GM12878"
+}
