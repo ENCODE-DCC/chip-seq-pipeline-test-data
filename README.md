@@ -1,9 +1,10 @@
-# atac-seq-pipeline-test-data
-Test data for ENCODE atac-seq-pipeline
+# chip-seq-pipeline-test-data
+Test data for ENCODE chip-seq-pipeline2
 
-Single ended dataset (ENCSR889WQX) and paired end dataset (ENCSR356KRQ) are subsampled down to 1/400 reads.
+Single ended dataset (ENCSR000DYI) and corrsponding control set (ENCSR496AXR) is subsampled down to 1/25 (1/20 for rep2 only) reads.
+Paired end dataset (ENCSR936XTK) is subsampled down to 1/67 reads and corresponding control set (ENCSR398JTO) is subsampled down to 1/80 reads.
 
-For genome data (`/genome_data`) sequences for chr19 and chrM are extracted from hg38 and mm10 and bowtie2 indices are built on them.
+Genome data on `/genome_data` are based on two chromosomes (chr19 and chrM) only.
 
 
 # How to extract chr19 and chrM from original fasta
@@ -26,21 +27,18 @@ $ ./subsample_fastq.sh
 2) Generate base reference outputs by running the following shell scripts. These test samples are subsampled down to 1/200 reads.
 ```
 $ cd scripts
-$ ./ENCSR356KRQ.sh
-$ ./ENCSR889WQX.sh
+$ ./ENCSR000DYI.sh
+$ ./ENCSR936XTK.sh
 ```
 
 3) Wait until 2) is done. Link outputs of 2) to JSON files in `test_sample/*.sh`, run other shell scripts.
 ```
 $ cd scripts
-$ ./ENCSR356KRQ_disable_tn5_shift.sh
-$ ./ENCSR356KRQ_no_dup_removal.sh
-$ ./ENCSR356KRQ_no_multimapping.sh
-$ ./ENCSR356KRQ_subsample.sh
-$ ./ENCSR356KRQ_subsample_xcor.sh
-$ ./ENCSR889WQX_disable_tn5_shift.sh
-$ ./ENCSR889WQX_no_dup_removal.sh
-$ ./ENCSR889WQX_no_multimapping.sh
-$ ./ENCSR889WQX_subsample.sh
-$ ./ENCSR889WQX_subsample_xcor.sh
+$ ./ENCSR000DYI_bam2ta_subsample.sh
+$ ./ENCSR000DYI_no_dup_removal.sh
+$ ./ENCSR000DYI_xcor_subsample.sh
+$ ./ENCSR936XTK_bam2ta_subsample.sh
+$ ./ENCSR936XTK_no_dup_removal.sh
+$ ./ENCSR936XTK_xcor_from_ta.sh
+$ ./ENCSR936XTK_xcor_subsample.sh
 ```
